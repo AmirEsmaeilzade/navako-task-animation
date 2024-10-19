@@ -1,0 +1,18 @@
+.avatar {
+    position: fixed;
+    bottom: 20px;
+    width: 100px;
+    height: 100px;
+    background-image: url('/public/assets/images/Player.png');
+    background-repeat: no-repeat;
+    background-size: 800px 300px;
+    background-position: 0 100px;
+    animation: run 1s steps(4) infinite;
+    will-change: transform;
+  }
+  
+  @keyframes run {
+    from { background-position: 0 -100px; }
+    to { background-position: -800px -100px; }
+  }
+  
